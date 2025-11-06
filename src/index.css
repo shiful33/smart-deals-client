@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import "tailwindcss";
+@plugin "daisyui"{
+  theme: light --default;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply font-bold py-2 px-4 rounded;
+  }
+}
+
+/* @plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: orange;
+  --color-secondary: purple;
+} */
+
+.btn-primary {
+    @apply bg-gradient-to-r from-[#632EE3] to-[#9F62F2] border-none text-white;
+}
+
+.btn-primary:hover {
+    @apply opacity-90;
+}
+
+.bg-gradient-primary {
+    background-image: linear-gradient(
+        to right,
+        #ff9900, 
+        #ff6600 50%,    
+        #cc5200 100%    
+    );
+}
+
+.bg-gradient-secondary {
+    background-image: linear-gradient(
+        to right,
+        #632EE3,
+        #9F62F2 50%, 
+        #ac93e6 100% 
+    );
+    border-radius: 0.5rem;
+}
+
+.text-gradient {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.divider-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin: 20px 0; 
+    width: 75%; 
+}
+
+.text-or {
+    padding: 0 15px;
+    color: #6c757d; 
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #dee2e6;
+    /* border-top: 1px solid #dee2e6; */
+}
