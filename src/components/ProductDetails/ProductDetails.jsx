@@ -21,7 +21,7 @@ const ProductDetails = () => {
   const title = product?.title || "Unknown Product";
 
   // Base URL for the API
-  const API_BASE_URL = "http://localhost:5000";
+  const API_BASE_URL = "https://smart-deals-api-server-flax.vercel.app";
 
   const fetchBids = async (productId) => {
     if (!productId) return;

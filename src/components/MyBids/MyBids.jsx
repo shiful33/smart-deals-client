@@ -11,7 +11,7 @@ const MyBids = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:5000/bids?buyer_email=${user.email}`, {
+      fetch(`https://smart-deals-api-server-flax.vercel.app/bids?buyer_email=${user.email}`, {
         headers: {
           authorization: `Bearer ${user.accessToken}`,
         },
@@ -34,7 +34,7 @@ const MyBids = () => {
     }
 
     try {
-      const res = await fetch(`http://localhost:5000/bids/${bidId}`, {
+      const res = await fetch(`https://smart-deals-api-server-flax.vercel.app/bids/${bidId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

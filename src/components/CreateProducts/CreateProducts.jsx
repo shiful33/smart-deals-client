@@ -31,7 +31,7 @@ const CreateProducts = () => {
       seller_name: user.displayName,
     };
 
-    axios.post("http://localhost:5000/products", newProduct).then((data) => {
+    axios.post("https://smart-deals-api-server-flax.vercel.app/products", newProduct).then((data) => {
       console.log(data.data);
       if (data.data.insertedId) {
         Swal.fire({

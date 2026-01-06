@@ -71,7 +71,7 @@ const router = createBrowserRouter([
         ),
         loader: async ({ params }) => {
           const res = await fetch(
-            `http://localhost:5000/products/${params.id}`,
+            `https://smart-deals-api-server-flax.vercel.app/products/${params.id}`,
             {
               headers: {
                 Authorization: `Bearer ${localStorage.getItem(
