@@ -2,7 +2,7 @@ import React from "react";
 import AllLatestProducts from "../AllLatestProducts/AllLatestProducts";
 import Footer from "../Footer/Footer";
 
-const allProductsPromise = fetch("http://localhost:5000/all-products").then(
+const allProductsPromise = fetch("/latest-products.json").then(
   (res) => res.json()
 );
 

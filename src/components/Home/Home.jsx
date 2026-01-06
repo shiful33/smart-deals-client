@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer';
 import Hero from '../Hero/Hero';
 
 
-const latestProductsPromise = fetch('http://localhost:5000/latest-products')
+const latestProductsPromise = fetch('/latest-products.json')
 .then(res => res.json());
 
 
