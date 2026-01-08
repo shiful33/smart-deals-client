@@ -18,9 +18,7 @@ import AuthProvider from "./context/AuthProvider.jsx";
 import PrivateRoute from "./Routes/PrivateRoute.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 
-// ===============================================
-// Router Configuration
-// ===============================================
+
 const router = createBrowserRouter([
   {
     path: "/",
